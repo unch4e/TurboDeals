@@ -4,9 +4,9 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+      "start": "node server.js",
+      "deploy": "gh-pages -d .frontend/pages"
     },
     "author": "",
     "license": "ISC"
   }
-  
