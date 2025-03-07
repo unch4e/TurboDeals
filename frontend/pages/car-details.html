@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <link rel="stylesheet" href="/frontend/assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" id="siteLogo">
+            <img src="/frontend/assets/images/default.png" alt="Site Logo" class="logo">
+        </a>
+    </header>
+
+    <main class="details-container">
+        <div class="gallery">
+            <div class="main-image">
+                <img id="mainImage" src="/frontend/assets/images/default.png" alt="Car Image">
+                <link rel="stylesheet" href="/frontend/assets/css/main.css">
+                <link rel="stylesheet" href="/frontend/assets/css/car-details.css">
+            </div>
+            <div class="thumbnails" id="thumbnails"></div>
+        </div>
+
+        <section class="car-info">
+            <h1 id="carTitle">Loading...</h1>
+            <div class="info-block">
+                <p><strong>Model:</strong> <span id="carBrand">Ładowanie...</span></p>
+                <p><strong>Marka:</strong> <span id="carModel">Ładowanie...</span></p>
+                <p><strong>Rok:</strong> <span id="carYear">Ładowanie...</span></p>
+                <p><strong>Cena:</strong> $<span id="carPrice">Ładowanie...</span></p>
+                <p><strong>Przebieg:</strong> <span id="carMileage">Ładowanie...</span> km</p>
+                <p><strong>Typ paliwa:</strong> <span id="carFuelType">Ładowanie...</span></p>
+            </div>
+        </section>
+
+        <section class="description">
+            <h2>Opis</h2>
+            <p id="carDescription"></p>
+        </section>
+        
+        <div class="back-button">
+            <button onclick="window.location.href='/'" class="btn back-btn">Wróć</button>
+        </div>
+    </main>
+
+    <script src="/frontend/assets/js/car-details.js"></script>
+</body>
+</html>

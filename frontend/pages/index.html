@@ -1,0 +1,75 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboDeals</title>
+    <link rel="stylesheet" href="/frontend/assets/css/main.css">
+    <link rel="stylesheet" href="/frontend/assets/css/style.css">
+
+</head>
+<body>
+    <header>
+        
+        <a href="/" id="siteLogo">
+            <img src="/frontend/assets/images/default.png" alt="Site Logo" id="siteLogo">
+        </a>
+        
+        <div id="userPanel">
+            <a href="/profile.html" id="profileLogo" style="display: none;">
+                <img src="/frontend/assets/images/uzytkownik.png" alt="User Profile">
+            </a>
+        </div>
+
+        <div id="authButtons">
+            <nav>
+                <button id="loginButton" onclick="window.location.href='/login'">Login</button>
+                <button id="registerButton" onclick="window.location.href='/register'">Rejestracja</button>
+                <a href="/add-car" id="addCarButton" class="" style="display: none;">Dodaj Auto</a>
+                <button id="logoutButton" style="display: none;" class="btn logout-btn">Logout</button>
+            </nav>
+        </div>
+        
+    </header>
+    <form id="searchForm" class="search-container">
+        <div class="search-bar">
+            <input type="text" id="brand" name="brand" placeholder="Marka">
+        <input type="text" id="model" name="model" placeholder="Model">
+        <input type="number" id="yearFrom" name="yearFrom" placeholder="Rok od">
+        <input type="number" id="yearTo" name="yearTo" placeholder="Rok do">
+        <input type="number" id="priceFrom" name="priceFrom" placeholder="Cena od">
+        <input type="number" id="priceTo" name="priceTo" placeholder="Cena do">
+            <label for="fuelType">Typ paliwa:</label>
+            <select id="fuelType" name="fuelType">
+                <option value="">Wszystkie</option>
+                <option value="Petrol">Benzyna</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Electric">Elektryk</option>
+                <option value="Hybrid">Hybryd</option>
+            </select>
+            <button type="submit" id="searchButton">Znajdź</button>
+        </div>
+    </form>
+
+    
+    <h1>Witam w TurboDeals</h1>
+        
+        <h2 class="featured-title">Najnowsze oferty!</h2>
+        
+        
+        <div id="loading" style="display: none;">Ładowanie...</div>
+        <div id="userActions" style="display: flex; align-items: center;">
+            <a href="/profile.html" id="profileLogo" style="display: none;">
+                <img src="/frontend/assets/images/user-profile.png" alt="User Profile">
+            </a>
+        </div>
+        
+    
+        <div id="carList" class="car-list"></div>
+        <script src="/frontend/assets/js/cars.js"></script>
+        <script src="/frontend/assets/js/main.js"></script>
+        <script src="/frontend/assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #444;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.car {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.car h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #0077cc;
+}
+
+.car p {
+    margin: 5px 0;
+}
+
+
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+button.delete {
+    background-color: #cc0000;
+}
+
+button.delete:hover {
+    background-color: #a30000;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    align-self: flex-start;
+}
+
+#backButton {
+    margin-top: 20px;
+    background-color: #888;
+}
+
+#backButton:hover {
+    background-color: #666;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .car {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    form input {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px 10px;
+    }
+}
+
+.car-details {
+    display: flex;
+    gap: 20px;
+}
+
+.info {
+    flex: 1;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    height: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.user-logo {
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn.red {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn.red:hover {
+    background-color: #a71d2a;
+}
+
+
+#userPanel {
+    display: flex;
+    align-items: center;
+}
+
+#authButtons {
+    display: flex;
+    gap: 10px;
+}
+#userActions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.details-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 75px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.thumbnails img:hover {
+    border-color: #3498db;
+}
+
+.car-info, .description, .equipment {
+    margin-top: 20px;
+}
+
+.car-info p, .description p, .equipment li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.equipment li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.description h2, .equipment h2 {
+    font-size: 20px;
+    color: #3498db;
+}
+
+.back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container, .profile-container, .details-container {
+        width: 100%;
+        padding: 10px;
+    }
+    .car-card {
+        width: 100%;
+    }
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .car-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .details-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .profile-container, .details-container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .car-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .car-card {
+        width: 100%;
+    }
+    .details-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .gallery-images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .profile-container {
+        width: 90%;
+    }
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .car-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .profile-container, .details-container {
+        max-width: 1200px;
+    }
+}
